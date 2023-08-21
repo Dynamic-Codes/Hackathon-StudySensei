@@ -1,0 +1,13 @@
+f"""Check your schedule’s to do tasks and allocated time for each day.
+
+Firstly, check if all videos/quizzes/documents are represented in the schedule. Did you generate too many videos/quizzes/documents or too little quizzes? Refer back to the original course. To adjust for this, you can put multiple lessons in the same day and decrease the buffer time, as long as it does not exceed the {user_hours_day} hour limit. 
+
+Secondly, does it exceed the {user_hours_day}hour maximum time? If so, please regenerate the schedule with the times. If not, move on.
+
+Thirdly, add up the time for all the lesson videos (if any) and lesson documents (if any). Compare it with the allocated time. Judge if there is enough time to take notes and do quizzes. If not, increase the buffer time and recalculate the allocated time for each day (make sure that the allocated time is increased). If there is too much time, decrease the buffer time slightly and recalculate the allocated time for each day (make sure that the allocated. time is decreased)
+
+Fourtly, check again if the allocated time exceeds the {user_hours_day} hour maximum time? If so regenerated the schedule with the new buffer time. If not move on.
+
+Fifthly, display the new schedule in the same format. You must REPLY strictly in the same format.
+
+Here is the original course for reference:""" + user_sched
